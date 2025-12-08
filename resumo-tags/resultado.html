@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado do Formulário</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .dados {
+            background: #fff;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .dados p {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+
+        a img {
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+
+        a img:hover {
+            transform: scale(1.05);
+        }
+
+        .link-bolo {
+            display: block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dados" id="resultado"></div>
+
+    <script>
+        // Captura os parâmetros da URL
+        const params = new URLSearchParams(window.location.search);
+
+        // Lê os valores
+        const nome = params.get("nome");
+        const email = params.get("email");
+        const telefone = params.get("telefone");
+        const mensagem = params.get("mensagem");
+        const comida = params.get("comida");
+
+        // Exibe as informações na página
+        const div = document.getElementById("resultado");
+        div.innerHTML = `
+      <p><strong>Nome:</strong> ${nome || "Não informado"}</p>
+      <p><strong>Email:</strong> ${email || "Não informado"}</p>
+      <p><strong>Telefone:</strong> ${telefone || "Não informado"}</p>
+      <p><strong>Mensagem:</strong> ${mensagem || "Sem mensagem"}</p>
+      <p><strong>Comida Favorita:</strong> ${comida || "Não informado"}</p>
+    `;
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        // Alterem as linhas abaixo
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        
+        if (comida && comida.toLowerCase().includes("bolo de cenoura")) {
+            const link = document.createElement("a");
+            link.href = "./receitas/bolo_cenoura.html";
+            link.target = "_blank";
+            link.className = "link-bolo";
+            link.innerHTML = `
+        <img width="300" src="./receitas/imagens/bolo_cenoura.jpeg" alt="Bolo de Cenoura">
+        <p><strong>Clique para ver a receita de Bolo de Cenoura</strong></p>
+      `;
+            document.body.appendChild(link);
+        }
+        if (comida && comida.toLowerCase().includes("bolo de chocolate")) {
+            const link = document.createElement("a");
+            link.href = "./receitas/bolo_chocolate.html";
+            link.target = "_blank";
+            link.className = "link-bolo";
+            link.innerHTML = `
+        <img width="300" src="./receitas/imagens/bolo_chocolate.jpg" alt="Bolo de Chocolate">
+        <p><strong>Clique para ver a receita de Bolo de Chocolate</strong></p>
+      `;
+            document.body.appendChild(link);
+        }
+        if (comida && comida.toLowerCase().includes("bolo de abacaxi")) {
+            const link = document.createElement("a");
+            link.href = "./receitas/bolo_abacaxi.html";
+            link.target = "_blank";
+            link.className = "link-bolo";
+            link.innerHTML = `
+        <img width="300" src="./receitas/imagens/bolo_abacaxi.jpeg" alt="Bolo de Abacaxi">
+        <p><strong>Clique para ver a receita de Bolo de Abacaxi</strong></p>
+      `;
+            document.body.appendChild(link);
+        }
+    </script>
+</body>
+
+</html>
