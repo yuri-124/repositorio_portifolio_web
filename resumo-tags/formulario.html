@@ -3,49 +3,42 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>1. Estrutura do Documento</title>
+    <title>7. Formulários</title>
 </head>
 
 <body>
     <div>
-        <h2>1. Estrutura do documento</h2>
+        <h2>7. Formulários</h2>
         <ul>
             <li>
-                <strong>&lt;!DOCTYPE html&gt;</strong> → Define que o documento é HTML5.
+                <strong>&lt;form&gt;</strong> → Cria um formulário.
                 <pre>Exemplo de uso:
-<code>&lt;!DOCTYPE html&gt;</code></pre>
+<code>&lt;form action="enviar.php" method="post"&gt;
+    ...
+&lt;/form&gt;</code></pre>
             </li>
             <li>
-                <strong>&lt;html&gt;</strong> → Tag raiz de todo documento.
+                <strong>&lt;input&gt;</strong> → Campo de entrada.
                 <pre>Exemplo de uso:
-<code>&lt;html lang="pt-BR"&gt;
-...
-&lt;/html&gt;</code></pre>
+<code>&lt;input type="text" name="nome" placeholder="Seu nome"&gt;</code></pre>
             </li>
             <li>
-                <strong>&lt;head&gt;</strong> → Contém informações do documento.
+                <strong>&lt;textarea&gt;</strong> → Área de texto.
                 <pre>Exemplo de uso:
-<code>&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;title&gt;Título da Página&lt;/title&gt;
-&lt;/head&gt;</code></pre>
+<code>&lt;textarea name="mensagem"&gt;Digite aqui...&lt;/textarea&gt;</code></pre>
             </li>
             <li>
-                <strong>&lt;meta&gt;</strong> → Metadados, como codificação de caracteres.
+                <strong>&lt;select&gt; e &lt;option&gt;</strong> → Caixa de seleção.
                 <pre>Exemplo de uso:
-<code>&lt;meta charset="UTF-8"&gt;</code></pre>
+<code>&lt;select name="curso"&gt;
+    &lt;option&gt;HTML&lt;/option&gt;
+    &lt;option&gt;CSS&lt;/option&gt;
+&lt;/select&gt;</code></pre>
             </li>
             <li>
-                <strong>&lt;title&gt;</strong> → Título da aba do navegador.
+                <strong>&lt;button&gt;</strong> → Botão de envio.
                 <pre>Exemplo de uso:
-<code>&lt;title&gt;Meu Site&lt;/title&gt;</code></pre>
-            </li>
-            <li>
-                <strong>&lt;body&gt;</strong> → Conteúdo visível da página.
-                <pre>Exemplo de uso:
-<code>&lt;body&gt;
-    &lt;h1&gt;Olá Mundo!&lt;/h1&gt;
-&lt;/body&gt;</code></pre>
+<code>&lt;button type="submit"&gt;Enviar&lt;/button&gt;</code></pre>
             </li>
         </ul>
     </div>
