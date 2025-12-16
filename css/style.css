@@ -119,3 +119,19 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+/* Estilo para Botão de Envio */
+button {
+    background-color: #2ecc71; /* Verde */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
