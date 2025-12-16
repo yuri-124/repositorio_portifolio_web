@@ -53,3 +53,13 @@ p {
     margin-bottom: 15px;
     font-size: 1.05em;
 }
+/* Estilos para Links */
+a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2e6cb5;
+}
