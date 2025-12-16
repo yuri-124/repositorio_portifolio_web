@@ -47,3 +47,9 @@ ul, ol {
 li {
     margin-bottom: 8px;
 }
+
+/* Estilos para Parágrafos */
+p {
+    margin-bottom: 15px;
+    font-size: 1.05em;
+}
