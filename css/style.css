@@ -5,3 +5,9 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+
+/* Estilo para o corpo da página */
+body {
+    background-color: #f4f4f9; /* Um cinza claro suave */
+    color: #333;
+    line-height: 1.6; }
