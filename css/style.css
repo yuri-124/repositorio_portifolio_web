@@ -63,3 +63,11 @@ a:hover {
     text-decoration: underline;
     color: #2e6cb5;
 }
+
+/* Estilos para Seções (como "Modo de Preparo" e "Glossário" no lista_comida1.html) */
+section {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
