@@ -71,3 +71,16 @@ section {
     border: 1px solid #eee;
     border-radius: 5px;
 }
+
+/* Estilos para Listas de Descrição/Glossário */
+dt {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
