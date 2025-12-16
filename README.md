@@ -57,7 +57,7 @@ O aluno deverá:
 ## 👨‍🏫 **Instrutor**
 *Jean Max Simon Krebs*
 
----
+---  
 
 ## 📄 **Licença (Opcional)**
 Este repositório pode ser utilizado para fins educacionais.
